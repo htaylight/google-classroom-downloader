@@ -11,7 +11,8 @@ This script downloads and organizes course materials from Google Classroom, savi
 2. [Installation](#installation)
 3. [Google Cloud Console Setup](#google-cloud-console-setup)
 4. [Running the Script](#running-the-script)
-5. [Troubleshooting](#troubleshooting)
+5. [Changing Account](#changing-account)
+6. [Troubleshooting](#troubleshooting)
 
 ## Prerequisites
 
@@ -127,6 +128,10 @@ This script downloads and organizes course materials from Google Classroom, savi
      ![Choose the Course](Screenshots/34.png)
 
    - The script will download the materials and save them in the `Downloads` folder.
+
+## Changing Account
+
+- If you want to use the script for other Google account, you do not need to set up Google Cloud Console again, just delete `token.pickle` file and run the script, when a browser opens, authenticate with your desired Google account as shown in the above steps.
 
 ## Troubleshooting
 
