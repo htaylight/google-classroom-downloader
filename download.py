@@ -50,11 +50,6 @@ def get_course_materials(service, course_id):
         return []
 
 
-def extract_file_id_from_url(url):
-    match = re.search(r'/d/([a-zA-Z0-9_-]+)', url)
-    return match.group(1) if match else None
-
-
 def download_file(drive_service, file_id, file_path, failed_downloads):
     if os.path.exists(file_path):
         print(f"File {file_path} already exists. Skipping download.\n")
